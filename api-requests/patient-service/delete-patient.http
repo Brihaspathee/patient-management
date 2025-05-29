@@ -1,0 +1,6 @@
+# Base URL for patient API
+@baseUrl = http://localhost:4000
+### Delete a patient
+DELETE {{baseUrl}}/patients/123e4567-e89b-12d3-a456-426614174001
+
+###

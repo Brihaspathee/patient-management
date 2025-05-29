@@ -1,0 +1,15 @@
+# Base URL for patient API
+@baseUrl = http://localhost:4000
+### PUT request to update a patient entity
+# updates the patients date of birth
+PUT {{baseUrl}}/patients/a5c2dfd2-3f4b-49e7-b753-cd0c422c6ae8
+Content-Type: application/json
+
+{
+  "name": "Pooja Mohanakrishnan",
+  "email": "poojadec10@gmail.com",
+  "address": "13377 Batten Lane, Odessa, FL 33556",
+  "dateOfBirth": "1985-12-10"
+}
+###
+

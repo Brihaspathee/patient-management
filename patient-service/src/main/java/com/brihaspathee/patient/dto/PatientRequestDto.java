@@ -1,5 +1,6 @@
 package com.brihaspathee.patient.dto;
 
+import com.brihaspathee.patient.dto.validators.CreatePatientValidationGroup;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -64,8 +65,8 @@ public class PatientRequestDto {
      * Represents the date when the patient was registered in the system.
      * This field is mandatory and should not be null or blank.
      */
-    @NotBlank(message = "Registered date is required")
-    @NotNull(message = "Registered date is required")
+    @NotBlank(groups = CreatePatientValidationGroup.class, message = "Registered date is required")
+    @NotNull(groups = CreatePatientValidationGroup.class, message = "Registered date is required")
     private String registeredDate;
 
 }

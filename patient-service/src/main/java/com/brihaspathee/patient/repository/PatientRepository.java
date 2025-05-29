@@ -17,4 +17,22 @@ import java.util.UUID;
  */
 @Repository
 public interface PatientRepository extends JpaRepository<Patient, UUID> {
+
+    /**
+     * Checks if a patient with the specified email address exists in the database.
+     *
+     * @param email the email address to check for existence
+     * @return true if a patient with the specified email exists, false otherwise
+     */
+    boolean existsByEmail(String email);
+
+    /**
+     * Checks if a patient exists with the specified email address and a different unique identifier.
+     *
+     * @param email the email address of the patient to check
+     * @param id the unique identifier of the patient to exclude from the search
+     * @return true if a patient with the specified email exists and does not have the provided id,
+     *         false otherwise
+     */
+    boolean existsByEmailAndIdNot(String email, UUID id);
 }

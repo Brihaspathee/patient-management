@@ -6,13 +6,11 @@ POST {{baseUrl}}/patients
 Content-Type: application/json
 
 {
-  "name": "Balaji Varadharajan",
+  "name": "Pooja Mohanakrishnan",
   "email": "vbalaji215@gmail.com",
   "address": "13377 Batten Lane",
   "dateOfBirth": "1983-05-21",
   "registeredDate": "2024-12-12"
 }
-
-###
 
 ###
